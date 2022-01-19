@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link rel="stylesheet" href="./css/slyles.css" />
+   </head>
+   <body>
+      <header class="header">
+         <div class="container header-content">
+            <nav class="nav">
+               <a href="./index.html" class="toplogo link">
+                  <span class="logo">Web</span
+                  ><span class="header-logo">Studio</span></a
+               >
+               <ul class="site-nav list">
+                  <li class="nav-list">
+                     <a href="./index.html" class="nav-link link">Студия</a>
+                  </li>
+                  <li class="nav-list">
+                     <a href="./portfolio.html" class="nav-link link current"
+                        >Портфолио</a
+                     >
+                  </li>
+                  <li class="nav-list">
+                     <a href="" class="nav-link link">Контакты</a>
+                  </li>
+               </ul>
+            </nav>
+            <ul class="header-contacts list">
+               <li class="contacts-list">
+                  <a
+                     class="header-contact link"
+                     href="mailto:info@devstudio.com"
+                  >
+                     <svg class="svg-mail" width="16" height="12">
+                        <use href="./images/sprite.svg#icon-convert"></use>
+                     </svg>
+                     info@devstudio.com</a
+                  >
+               </li>
+               <li class="contacts-list">
+                  <a class="header-contact link" href="tel:+380961111111">
+                     <svg class="svg-phone" width="10" height="16">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                     </svg>
+                     +38 096 111 11 11</a
+                  >
+               </li>
+            </ul>
+         </div>
+      </header>
+      <main>
+         <section class="features-section">
+            <div class="container">
+               <h1 class="hide-title">Наши продукты</h1>
+               <ul class="list btn-list">
+                  <li class="filter-buttons">
+                     <button type="button" class="filter-button">Все</button>
+                  </li>
+                  <li class="filter-buttons">
+                     <button type="button" class="filter-button">
+                        Веб-сайты
+                     </button>
+                  </li>
+                  <li class="filter-buttons">
+                     <button type="button" class="filter-button">
+                        Приложения
+                     </button>
+                  </li>
+                  <li class="filter-buttons">
+                     <button type="button" class="filter-button">Дизайн</button>
+                  </li>
+                  <li class="filter-buttons">
+                     <button type="button" class="filter-button">
+                        Маркетинг
+                     </button>
+                  </li>
+               </ul>
+               <ul class="list product-list">
+                  <li class="product">
+                     <a href="" class="product-link">
+                        <div class="product-pic">
+                           <img
+                              src="./images/img1.jpg"
+                              class="product-img"
+                              alt="ноутбук с веб-сайтом"
+                           />
+                           <div class="product-description">
+                              <p class="product-text">
+                                 Lorem ipsum dolor sit amet consectetur
+                                 adipisicing elit. Ducimus ea nesciunt earum
+                                 libero? Quis molestias blanditiis quaerat!
+                                 Deleniti, quia sunt.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="products-inside">
+                           <h2 class="product-name">Технокряк</h2>
+                           <p class="description">Веб-сайт</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="product">
+                     <a href="" class="product-link">
+                        <div class="product-pic">
+                           <img
+                              src="./images/img2.jpg"
+                              class="product-img"
+                              alt="баскетболисты"
+                           />
+                           <div class="product-description">
+                              <p class="product-text">
+                                 Lorem ipsum dolor sit amet consectetur
+                                 adipisicing elit. Ducimus ea nesciunt earum
+                                 libero? Quis molestias blanditiis quaerat!
+                                 Deleniti, quia sunt.
+                              </p>
+                           </div>
+                        </div>
+
+                        <div class="products-inside">
+                           <h2 class="product-name">
+                              Постер New Orlean vs Golden Star
+                           </h2>
+                           <p class="description">Дизайн</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="product">
+                     <a href="" class="product-link">
+                        <div class="product-pic">
+                           <img
+                              src="./images/img3.jpg"
+                              class="product-img"
+                              alt="лого ресторана"
+                           />
+                           <div class="product-description">
+                              <p class="product-text">
+                                 Lorem ipsum dolor sit amet consectetur
+                                 adipisicing elit. Ducimus ea nesciunt earum
+                                 libero? Quis molestias blanditiis quaerat!
+                                 Deleniti, quia sunt.
+                              </p>
+                           </div>
+                        </div>
+
+                        <div class="products-inside">
+                           <h2 class="product-name">Ресторан Seafood</h2>
+                           <p class="description">Приложение</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="product">
+                     <a href="" class="product-link">
+                        <div class="product-pic">
+                           <img
+                              src="./images/img4.jpg"
+                              class="product-img"
+                              alt="наушники"
+                           />
+                           <div class="product-description">
+                              <p class="product-text">
+                                 Lorem ipsum dolor sit amet consectetur
+                                 adipisicing elit. Ducimus ea nesciunt earum
+                                 libero? Quis molestias blanditiis quaerat!
+                                 Deleniti, quia sunt.
+                              </p>
+                           </div>
+                        </div>
+
+                        <div class="products-inside">
+                           <h2 class="product-name">Проект Prime</h2>
+                           <p class="description">Маркетинг</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="product">
+                     <a href="" class="product-link">
+                        <div class="product-pic">
+                           <img
+                              src="./images/img5.jpg"
+                              class="product-img"
+                              alt="коробки"
+                           />
+                           <div class="product-description">
+                              <p class="product-text">
+                                 Lorem ipsum dolor sit amet consectetur
+                                 adipisicing elit. Ducimus ea nesciunt earum
+                                 libero? Quis molestias blanditiis quaerat!
+                                 Deleniti, quia sunt.
+                              </p>
+                           </div>
+                        </div>
+
+                        <div class="products-inside">
+                           <h2 class="product-name">Проект Boxes</h2>
+                           <p class="description">Приложение</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="product">
+                     <a href="" class="product-link">
+                        <div class="product-pic">
+                           <img
+                              src="./images/img6.jpg"
+                              class="product-img"
+                              alt="монитор с вебсайтом"
+                           />
+                           <div class="product-description">
+                              <p class="product-text">
+                                 Lorem ipsum dolor sit amet consectetur
+                                 adipisicing elit. Ducimus ea nesciunt earum
+                                 libero? Quis molestias blanditiis quaerat!
+                                 Deleniti, quia sunt.
+                              </p>
+                           </div>
+                        </div>
+
+                        <div class="products-inside">
+                           <h2 class="product-name">
+                              Inspiration has no Borders
+                           </h2>
+                           <p class="description">Веб-сайт</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="product">
+                     <a href="" class="product-link">
+                        <div class="product-pic">
+                           <img
+                              src="./images/img7.jpg"
+                              class="product-img"
+                              alt="книга"
+                           />
+                           <div class="product-description">
+                              <p class="product-text">
+                                 Lorem ipsum dolor sit amet consectetur
+                                 adipisicing elit. Ducimus ea nesciunt earum
+                                 libero? Quis molestias blanditiis quaerat!
+                                 Deleniti, quia sunt.
+                              </p>
+                           </div>
+                        </div>
+
+                        <div class="products-inside">
+                           <h2 class="product-name">Издание Limited Edition</h2>
+                           <p class="description">Дизайн</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="product">
+                     <a href="" class="product-link">
+                        <div class="product-pic">
+                           <img
+                              src="./images/img8.jpg"
+                              class="product-img"
+                              alt="этикетка"
+                           />
+                           <div class="product-description">
+                              <p class="product-text">
+                                 Lorem ipsum dolor sit amet consectetur
+                                 adipisicing elit. Ducimus ea nesciunt earum
+                                 libero? Quis molestias blanditiis quaerat!
+                                 Deleniti, quia sunt.
+                              </p>
+                           </div>
+                        </div>
+
+                        <div class="products-inside">
+                           <h2 class="product-name">Проект LAB</h2>
+                           <p class="description">Маркетинг</p>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="product">
+                     <a href="" class="product-link">
+                        <div class="product-pic">
+                           <img
+                              src="./images/img9.jpg"
+                              class="product-img"
+                              alt="ноутбук с приложением"
+                           />
+                           <div class="product-description">
+                              <p class="product-text">
+                                 Lorem ipsum dolor sit amet consectetur
+                                 adipisicing elit. Ducimus ea nesciunt earum
+                                 libero? Quis molestias blanditiis quaerat!
+                                 Deleniti, quia sunt.
+                              </p>
+                           </div>
+                        </div>
+
+                        <div class="products-inside">
+                           <h2 class="product-name">Growing Business</h2>
+                           <p class="description">Приложение</p>
+                        </div>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="container footer-content">
+            <div class="logo-address">
+               <a href="index.html" class="btmlogo link">
+                  <span class="logo">Web</span
+                  ><span class="footer-logo">Studio</span>
+               </a>
+               <address>
+                  <ul class="list">
+                     <li class="address-list">
+                        <a
+                           href="https://goo.gl/maps/wcCM6j37VZqPyRbJ7"
+                           class="street link"
+                           target="_blank"
+                           rel="noopener noreferrer nofollow"
+                           >г. Киев, пр-т Леси Украинки, 26
+                        </a>
+                     </li>
+                     <li class="address-list">
+                        <a
+                           class="foot-contacts link"
+                           href="mailto:info@devstudio.com"
+                           >info@devstudio.com</a
+                        >
+                     </li>
+                     <li class="address-list">
+                        <a class="foot-contacts link" href="tel:+380961111111"
+                           >+38 096 111 11 11</a
+                        >
+                     </li>
+                  </ul>
+               </address>
+            </div>
+            <div class="join">
+               <strong class="join-us">ПРИСОЕДИНЯЙТЕСЬ</strong>
+               <ul class="list social">
+                  <li class="social-list">
+                     <a href="" class="footer-social-link">
+                        <svg
+                           class="footer-social-icon"
+                           width="20px"
+                           height="20px"
+                        >
+                           <use href="./images/sprite.svg#icon-instagram"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social-list">
+                     <a href="" class="footer-social-link">
+                        <svg
+                           class="footer-social-icon"
+                           width="20px"
+                           height="20px"
+                        >
+                           <use href="./images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social-list">
+                     <a href="" class="footer-social-link">
+                        <svg
+                           class="footer-social-icon"
+                           width="20px"
+                           height="20px"
+                        >
+                           <use href="./images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social-list">
+                     <a href="" class="footer-social-link">
+                        <svg
+                           class="footer-social-icon"
+                           width="20px"
+                           height="20px"
+                        >
+                           <use href="./images/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div >
+               <form class="footer-form">
+                  <div class="footer-form-field">
+                     <label class="footer-mail-form" for="footer-mail-form">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+                     <input  type="email" id="footer-mail-form" placeholder="E-mail">
+                  </div>
+                     <button type="submit" class="footer-subscribe-btn">
+                        Подписаться
+                        <svg class="subscribe-btn-icon" width="24px" height="24px">
+                           <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                     </button>                  
+               </form>
+            </div>            
+         </div>
+      </footer>
+   </body>
+</html>
