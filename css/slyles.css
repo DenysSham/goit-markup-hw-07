@@ -3,13 +3,13 @@
    --secondary-text-color: #757575;
    --primary-text-color: #212121;
    --current-color: #2196f3;
-   --white-colour: #ffffff;
-   --addres-colour: rgba(255, 255, 255, 0.6);
+   --main-title-color: #ffffff;
+   --addres-color: rgba(255, 255, 255, 0.6);
    --background: #2f303a;
    --second-background: #f5f4fa;
    --border: #eeeeee;
    --clients-picture-border: #afb1b8;
-   --hero-background: #c4c4c4;
+   --hero-section-background: #c4c4c4;
    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ОБЩИЕ НАСТРОЙКИ */
@@ -161,7 +161,7 @@ button{
    max-width: 1600px;
    height: 600px;
    background-repeat: no-repeat;
-   background-color: var(--hero-background);
+   background-color: var(--hero-section-background);
    background-image: linear-gradient(
          to bottom,
          rgba(47, 48, 58, 0.4),
@@ -180,7 +180,7 @@ button{
    text-align: center;
    letter-spacing: 0.06em;
    text-transform: uppercase;
-   color: var(--white-colour);
+   color: var(--main-title-color);
 }
 .hero-section__button {
    border-radius: 4px;
@@ -191,7 +191,7 @@ button{
    font-size: 16px;
    line-height: 1.875;
    background-color: var(--current-color);
-   color: var(--white-colour);
+   color: var(--main-title-color);
    cursor: pointer;
    letter-spacing: 0.06em;
 }
@@ -292,7 +292,7 @@ button{
    text-align: center;
    line-height: 1.14;
    letter-spacing: 0.03em;
-   color: var(--white-colour);
+   color: var(--main-title-color);
 }
 .team-section {
    padding: 94px 0;
@@ -327,7 +327,7 @@ button{
    justify-content: center;
    padding-top: 30px;
    padding-bottom: 30px;
-   background-color: var(--white-colour);
+   background-color: var(--main-title-color);
 }
 .worker__name {
    margin-bottom: 10px;
@@ -358,7 +358,7 @@ button{
    align-items: center;
    width: 44px;
    height: 44px;
-   background-color: var(--white-colour);
+   background-color: var(--main-title-color);
    border-radius: 50%;
    transition: background-color 250ms var(--timing-function);
 }
@@ -376,7 +376,7 @@ button{
 
 .social-list__link:focus .social-list__icon,
 .social-list__link:hover .social-list__icon {
-   fill: var(--white-colour);
+   fill: var(--main-title-color);
    background-color: var(--current-color);
 }
 .social-list__link:not(:last-child) {
@@ -455,7 +455,7 @@ button{
 .filter-button:hover {
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
-   color: var(--white-colour);
+   color: var(--main-title-color);
    background-color: var(--current-color);
 }
 .product-list {
@@ -478,7 +478,7 @@ button{
 .products-inside {
    text-decoration: none;
    padding: 20px 24px;
-   background-color: var(--white-colour);
+   background-color: var(--main-title-color);
    border-bottom: 1px solid var(--border);
    border-left: 1px solid var(--border);
    border-right: 1px solid var(--border);
@@ -523,7 +523,7 @@ button{
    font-size: 18px;
    line-height: 1.56;
    letter-spacing: 0.03em;
-   color: var(--white-colour);
+   color: var(--main-title-color);
 }
 .product-name {
    margin-bottom: 4px;
@@ -552,53 +552,60 @@ button{
    display: flex;
    align-items: baseline;
 }
-.logo-address {
+.footer__addres-field {
    margin-right: 70px;
 }
 .footer__link {
    display: inline-block;
    margin-bottom: 20px;
 }
-.footer-logo {
+.footer__logo-part1{
    font-family: Raleway;
    font-style: normal;
    font-size: 26px;
    line-height: 1.19;
-   color: var(--white-colour);
+   color: var(--current-color);
+}
+.footer__logo-part2 {
+   font-family: Raleway;
+   font-style: normal;
+   font-size: 26px;
+   line-height: 1.19;
+   color: var(--main-title-color);
 }
 
-.street {
+.address__street-link {
    font-style: normal;
    font-size: 14px;
    line-height: 1.71;
    letter-spacing: 0.03em;
-   color: var(--white-colour);
+   color: var(--main-title-color);
    transition: color 250ms var(--timing-function);
 }
-.street:hover,
-.street:focus {
+.address__street-link:hover,
+.address__street-link:focus {
    color: var(--current-color);
 }
-.foot-contacts {
+.footer__contacts {
    font-style: normal;
    font-size: 14px;
    line-height: 1.71;
    letter-spacing: 0.03em;
-   color: var(--addres-colour);
+   color: var(--addres-color);
    transition: color 250ms var(--timing-function);
 }
 
-.foot-contacts:hover,
-.foot-contacts:focus {
+.footer__contacts:hover,
+.footer__contacts:focus {
    color: var(--current-color);
 }
-.address-list:not(:last-child) {
+.address:not(:last-child) {
    margin-bottom: 9px;
 }
 .join{
    margin-right: 93px;
 }
-.join-us {
+.join__label {
    display: inline-block;
    margin-bottom: 20px;
    font-style: normal;
@@ -606,9 +613,12 @@ button{
    line-height: 1.14;
    letter-spacing: 0.03em;
    text-transform: uppercase;
-   color: var(--white-colour);
+   color: var(--main-title-color);
 }
-.footer-social-link {
+.social-list {
+   display: inline-flex;
+}
+.social-list__link {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -618,46 +628,35 @@ button{
    border-radius: 50%;
    transition: background-color 250ms var(--timing-function);
 }
-.footer-social-link:focus,
-.footer-social-link:hover {
+.social-list__link:focus,
+.social-list__link:hover {
    background-color: var(--current-color);
 }
 
-.footer-social-icon {
-   fill: var(--white-colour);
+.social-list__icon {
+   fill: var(--main-title-color);
    transition: fill 250ms var(--timing-function);
 }
-.footer-social-link:focus .footer-social-icon,
-.footer-social-link:hover .footer-social-icon {
-   fill: var(--white-colour);
+.social-list__link:focus .social-list__icon,
+.social-list__link:hover .social-list__icon {
+   fill: var(--main-title-color);
 }
-.join:not(:last-child).footer-social {
+.social-list__item:not(:last-child){
    margin-right: 10px;
 }
-.footer-form{
+.subscribe-form{
    display: flex;
    align-items: flex-end;
    
 }
-.footer-form-field{
+.subscribe-form__field{
    display: flex;
    flex-direction: column;
-   width: 358px;
+   width: 360px;
    height: 86px;
    margin-right: 12px;
 }
-.footer-form input{
-   padding: 15px 16px;
-   border: 1px solid rgba(255, 255, 255, 0.3);
-   color: var(--white-colour);
-   background-color: var(--background);
-   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-   border-radius: 4px;
- }
- .footer-form input::placeholder{
-   color: rgba(255, 255, 255, 0.6);
-}
-.footer-mail-form {   
+.subscribe-form__text {   
    margin-bottom: 20px;
    font-family: Roboto;
    font-style: normal;
@@ -666,12 +665,22 @@ button{
    line-height: 1.142;
    letter-spacing: 0.03em;
    text-transform: uppercase;
-   color: var(--white-colour);
+   color: var(--main-title-color);
 }
-.footer-mail-form input{
-   
+
+.subscribe-form__input{
+   padding: 15px 16px;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   color: var(--main-title-color);
+   background-color: var(--background);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+ }
+ .subscribe-form__input::placeholder{
+   color: rgba(255, 255, 255, 0.6);
 }
-.footer-subscribe-btn{
+
+.subscribe-form__button{
    display: flex;
    justify-content: center;
    align-items: center;
@@ -679,7 +688,7 @@ button{
    height: 50px;
    padding: 10px 28px 10px 29px;
 
-   color: var(--white-colour);
+   color: var(--main-title-color);
    background-color: var(--current-color);
    font-family: Roboto;
    font-style: normal;
@@ -692,11 +701,9 @@ button{
    border: none;
    border-radius: 4px;
 }
-.subscribe-btn-icon{
-   fill: var(--white-colour);
+.subscribe-form__btn-icon{
+   fill: var(--main-title-color);
    margin-left: 10px;
-
-
 }
 /* modal window */
 .backdrop {
@@ -719,7 +726,7 @@ button{
    min-width: 530px;
    min-height: 583px;
    padding: 40px;
-   background-color: var(--white-colour);
+   background-color: var(--main-title-color);
    transition: transform 250ms var(--timing-function);
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 4px;
@@ -823,7 +830,7 @@ button{
 }
 .checkbox:checked + .confirm-policy-icon{
    border-color: transparent;
-   fill: var(--white-colour);
+   fill: var(--main-title-color);
    background-color: var(--current-color);
    background-image: url('../images/icon-check.svg');
    background-size: contain;
@@ -873,7 +880,7 @@ button{
    height: 30px;
    border: 1px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
-   background-color: var(--white-colour);
+   background-color: var(--main-title-color);
    }
 .modal-close-icon {
    fill: #000;
@@ -885,7 +892,7 @@ button{
 }
 .modal-close-button:hover,
 .modal-close-button:focus {
-   background-color: var(--white-colour);
+   background-color: var(--main-title-color);
    cursor: pointer;
 }
 textarea{
@@ -899,7 +906,7 @@ textarea{
    width: 200px;
    height: 50px;
    padding: 10px 55px;
-   color: var(--white-colour);
+   color: var(--main-title-color);
    background: #2196F3;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border: none;
