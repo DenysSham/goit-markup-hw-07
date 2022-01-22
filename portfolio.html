@@ -21,41 +21,43 @@
    </head>
    <body>
       <header class="header">
-         <div class="container header-content">
-            <nav class="nav">
-               <a href="./index.html" class="toplogo link">
-                  <span class="logo">Web</span
-                  ><span class="header-logo">Studio</span></a
+         <div class="container header__block">
+            <nav class="site-nav">
+               <a href="./index.html" class="site-nav__link">
+                  <span class="site-nav__logo-part1">Web</span
+                  ><span class="site-nav__logo-part2">Studio</span></a
                >
-               <ul class="site-nav list">
-                  <li class="nav-list">
-                     <a href="./index.html" class="nav-link link">Студия</a>
-                  </li>
-                  <li class="nav-list">
-                     <a href="./portfolio.html" class="nav-link link current"
-                        >Портфолио</a
+               <ul class="site-nav__list ">
+                  <li class="site-nav__list-item">
+                     <a href="./index.html" class="site-nav__list-link"
+                        >Студия</a
                      >
                   </li>
-                  <li class="nav-list">
-                     <a href="" class="nav-link link">Контакты</a>
+                  <li class="site-nav__list-item">
+                     <a href="./portfolio.html" class="site-nav__list-link site-nav__list-link--current"
+                     >Портфолио</a>
+                     
+                  </li>
+                  <li class="site-nav__list-item">
+                     <a href="" class="site-nav__list-link">Контакты</a>
                   </li>
                </ul>
             </nav>
-            <ul class="header-contacts list">
-               <li class="contacts-list">
+            <ul class="header-contacts">
+               <li class="header-contacts__item">
                   <a
-                     class="header-contact link"
+                     class="header-contacts__link"
                      href="mailto:info@devstudio.com"
                   >
-                     <svg class="svg-mail" width="16" height="12">
+                     <svg class="header-contacts__mail-icon" width="16" height="12">
                         <use href="./images/sprite.svg#icon-convert"></use>
                      </svg>
                      info@devstudio.com</a
                   >
                </li>
-               <li class="contacts-list">
-                  <a class="header-contact link" href="tel:+380961111111">
-                     <svg class="svg-phone" width="10" height="16">
+               <li class="header-contacts__item">
+                  <a class="header-contacts__link" href="tel:+380961111111">
+                     <svg class="header-contacts__phone-icon" width="10" height="16">
                         <use href="./images/sprite.svg#icon-smartphone"></use>
                      </svg>
                      +38 096 111 11 11</a
@@ -65,43 +67,43 @@
          </div>
       </header>
       <main>
-         <section class="features-section">
+         <section class="portfolio-section">
             <div class="container">
-               <h1 class="hide-title">Наши продукты</h1>
-               <ul class="list btn-list">
-                  <li class="filter-buttons">
-                     <button type="button" class="filter-button">Все</button>
+               <h1 class="portfolio-section__title--hidden">Наши продукты</h1>
+               <ul class="filter__list">
+                  <li class="filter__item">
+                     <button type="button" class="filter__button">Все</button>
                   </li>
-                  <li class="filter-buttons">
-                     <button type="button" class="filter-button">
+                  <li class="filter__item">
+                     <button type="button" class="filter__button">
                         Веб-сайты
                      </button>
                   </li>
-                  <li class="filter-buttons">
-                     <button type="button" class="filter-button">
+                  <li class="filter__item">
+                     <button type="button" class="filter__button">
                         Приложения
                      </button>
                   </li>
-                  <li class="filter-buttons">
-                     <button type="button" class="filter-button">Дизайн</button>
+                  <li class="filter__item">
+                     <button type="button" class="filter__button">Дизайн</button>
                   </li>
-                  <li class="filter-buttons">
-                     <button type="button" class="filter-button">
+                  <li class="filter__item">
+                     <button type="button" class="filter__button">
                         Маркетинг
                      </button>
                   </li>
                </ul>
-               <ul class="list product-list">
-                  <li class="product">
-                     <a href="" class="product-link">
-                        <div class="product-pic">
+               <ul class="product__list">
+                  <li class="product__item">
+                     <a href="" class="product__link">
+                        <div class="product__img-block">
                            <img
                               src="./images/img1.jpg"
-                              class="product-img"
+                              class="product__img"
                               alt="ноутбук с веб-сайтом"
                            />
-                           <div class="product-description">
-                              <p class="product-text">
+                           <div class="product__description">
+                              <p class="product__text">
                                  Lorem ipsum dolor sit amet consectetur
                                  adipisicing elit. Ducimus ea nesciunt earum
                                  libero? Quis molestias blanditiis quaerat!
@@ -109,22 +111,22 @@
                               </p>
                            </div>
                         </div>
-                        <div class="products-inside">
-                           <h2 class="product-name">Технокряк</h2>
-                           <p class="description">Веб-сайт</p>
+                        <div class="product__meta">
+                           <h2 class="product__name">Технокряк</h2>
+                           <p class="product__type">Веб-сайт</p>
                         </div>
                      </a>
                   </li>
-                  <li class="product">
-                     <a href="" class="product-link">
-                        <div class="product-pic">
+                  <li class="product__item">
+                     <a href="" class="product__link">
+                        <div class="product__img-block">
                            <img
                               src="./images/img2.jpg"
-                              class="product-img"
+                              class="product__img"
                               alt="баскетболисты"
                            />
-                           <div class="product-description">
-                              <p class="product-text">
+                           <div class="product__description">
+                              <p class="product__text">
                                  Lorem ipsum dolor sit amet consectetur
                                  adipisicing elit. Ducimus ea nesciunt earum
                                  libero? Quis molestias blanditiis quaerat!
@@ -132,25 +134,24 @@
                               </p>
                            </div>
                         </div>
-
-                        <div class="products-inside">
-                           <h2 class="product-name">
+                        <div class="product__meta">
+                           <h2 class="product__name">
                               Постер New Orlean vs Golden Star
                            </h2>
-                           <p class="description">Дизайн</p>
+                           <p class="product__type">Дизайн</p>
                         </div>
                      </a>
                   </li>
-                  <li class="product">
-                     <a href="" class="product-link">
-                        <div class="product-pic">
+                  <li class="product__item">
+                     <a href="" class="product__link">
+                        <div class="product__img-block">
                            <img
                               src="./images/img3.jpg"
-                              class="product-img"
+                              class="product__img"
                               alt="лого ресторана"
                            />
-                           <div class="product-description">
-                              <p class="product-text">
+                           <div class="product__description">
+                              <p class="product__text">
                                  Lorem ipsum dolor sit amet consectetur
                                  adipisicing elit. Ducimus ea nesciunt earum
                                  libero? Quis molestias blanditiis quaerat!
@@ -158,23 +159,22 @@
                               </p>
                            </div>
                         </div>
-
-                        <div class="products-inside">
-                           <h2 class="product-name">Ресторан Seafood</h2>
-                           <p class="description">Приложение</p>
+                        <div class="product__meta">
+                           <h2 class="product__name">Ресторан Seafood</h2>
+                           <p class="product__type">Приложение</p>
                         </div>
                      </a>
                   </li>
-                  <li class="product">
-                     <a href="" class="product-link">
-                        <div class="product-pic">
+                  <li class="product__item">
+                     <a href="" class="product__link">
+                        <div class="product__img-block">
                            <img
                               src="./images/img4.jpg"
-                              class="product-img"
+                              class="product__img"
                               alt="наушники"
                            />
-                           <div class="product-description">
-                              <p class="product-text">
+                           <div class="product__description">
+                              <p class="product__text">
                                  Lorem ipsum dolor sit amet consectetur
                                  adipisicing elit. Ducimus ea nesciunt earum
                                  libero? Quis molestias blanditiis quaerat!
@@ -182,23 +182,22 @@
                               </p>
                            </div>
                         </div>
-
-                        <div class="products-inside">
-                           <h2 class="product-name">Проект Prime</h2>
-                           <p class="description">Маркетинг</p>
+                        <div class="product__meta">
+                           <h2 class="product__name">Проект Prime</h2>
+                           <p class="product__type">Маркетинг</p>
                         </div>
                      </a>
                   </li>
-                  <li class="product">
-                     <a href="" class="product-link">
-                        <div class="product-pic">
+                  <li class="product__item">
+                     <a href="" class="product__link">
+                        <div class="product__img-block">
                            <img
                               src="./images/img5.jpg"
-                              class="product-img"
+                              class="product__img"
                               alt="коробки"
                            />
-                           <div class="product-description">
-                              <p class="product-text">
+                           <div class="product__description">
+                              <p class="product__text">
                                  Lorem ipsum dolor sit amet consectetur
                                  adipisicing elit. Ducimus ea nesciunt earum
                                  libero? Quis molestias blanditiis quaerat!
@@ -206,23 +205,22 @@
                               </p>
                            </div>
                         </div>
-
-                        <div class="products-inside">
-                           <h2 class="product-name">Проект Boxes</h2>
-                           <p class="description">Приложение</p>
+                        <div class="product__meta">
+                           <h2 class="product__name">Проект Boxes</h2>
+                           <p class="product__type">Приложение</p>
                         </div>
                      </a>
                   </li>
-                  <li class="product">
-                     <a href="" class="product-link">
-                        <div class="product-pic">
+                  <li class="product__item">
+                     <a href="" class="product__link">
+                        <div class="product__img-block">
                            <img
                               src="./images/img6.jpg"
-                              class="product-img"
+                              class="product__img"
                               alt="монитор с вебсайтом"
                            />
-                           <div class="product-description">
-                              <p class="product-text">
+                           <div class="product__description">
+                              <p class="product__text">
                                  Lorem ipsum dolor sit amet consectetur
                                  adipisicing elit. Ducimus ea nesciunt earum
                                  libero? Quis molestias blanditiis quaerat!
@@ -230,25 +228,24 @@
                               </p>
                            </div>
                         </div>
-
-                        <div class="products-inside">
-                           <h2 class="product-name">
+                        <div class="product__meta">
+                           <h2 class="product__name">
                               Inspiration has no Borders
                            </h2>
-                           <p class="description">Веб-сайт</p>
+                           <p class="product__type">Веб-сайт</p>
                         </div>
                      </a>
                   </li>
-                  <li class="product">
-                     <a href="" class="product-link">
-                        <div class="product-pic">
+                  <li class="product__item">
+                     <a href="" class="product__link">
+                        <div class="product__img-block">
                            <img
                               src="./images/img7.jpg"
-                              class="product-img"
+                              class="product__img"
                               alt="книга"
                            />
-                           <div class="product-description">
-                              <p class="product-text">
+                           <div class="product__description">
+                              <p class="product__text">
                                  Lorem ipsum dolor sit amet consectetur
                                  adipisicing elit. Ducimus ea nesciunt earum
                                  libero? Quis molestias blanditiis quaerat!
@@ -256,23 +253,22 @@
                               </p>
                            </div>
                         </div>
-
-                        <div class="products-inside">
-                           <h2 class="product-name">Издание Limited Edition</h2>
-                           <p class="description">Дизайн</p>
+                        <div class="product__meta">
+                           <h2 class="product__name">Издание Limited Edition</h2>
+                           <p class="product__type">Дизайн</p>
                         </div>
                      </a>
                   </li>
-                  <li class="product">
-                     <a href="" class="product-link">
-                        <div class="product-pic">
+                  <li class="product__item">
+                     <a href="" class="product__link">
+                        <div class="product__img-block">
                            <img
                               src="./images/img8.jpg"
-                              class="product-img"
+                              class="product__img"
                               alt="этикетка"
                            />
-                           <div class="product-description">
-                              <p class="product-text">
+                           <div class="product__description">
+                              <p class="product__text">
                                  Lorem ipsum dolor sit amet consectetur
                                  adipisicing elit. Ducimus ea nesciunt earum
                                  libero? Quis molestias blanditiis quaerat!
@@ -280,23 +276,22 @@
                               </p>
                            </div>
                         </div>
-
-                        <div class="products-inside">
-                           <h2 class="product-name">Проект LAB</h2>
-                           <p class="description">Маркетинг</p>
+                        <div class="product__meta">
+                           <h2 class="product__name">Проект LAB</h2>
+                           <p class="product__type">Маркетинг</p>
                         </div>
                      </a>
                   </li>
-                  <li class="product">
-                     <a href="" class="product-link">
-                        <div class="product-pic">
+                  <li class="product__item">
+                     <a href="" class="product__link">
+                        <div class="product__img-block">
                            <img
                               src="./images/img9.jpg"
-                              class="product-img"
+                              class="product__img"
                               alt="ноутбук с приложением"
                            />
-                           <div class="product-description">
-                              <p class="product-text">
+                           <div class="product__description">
+                              <p class="product__text">
                                  Lorem ipsum dolor sit amet consectetur
                                  adipisicing elit. Ducimus ea nesciunt earum
                                  libero? Quis molestias blanditiis quaerat!
@@ -304,10 +299,9 @@
                               </p>
                            </div>
                         </div>
-
-                        <div class="products-inside">
-                           <h2 class="product-name">Growing Business</h2>
-                           <p class="description">Приложение</p>
+                        <div class="product__meta">
+                           <h2 class="product__name">Growing Business</h2>
+                           <p class="product__type">Приложение</p>
                         </div>
                      </a>
                   </li>
@@ -316,45 +310,45 @@
          </section>
       </main>
       <footer class="footer">
-         <div class="container footer-content">
-            <div class="logo-address">
-               <a href="index.html" class="btmlogo link">
-                  <span class="logo">Web</span
-                  ><span class="footer-logo">Studio</span>
+         <div class="footer__content container">
+            <div class="footer__addres-field">
+               <a href="index.html" class="footer__link">
+                  <span class="footer__logo-part1">Web</span
+                  ><span class="footer__logo-part2">Studio</span>
                </a>
                <address>
-                  <ul class="list">
-                     <li class="address-list">
+                  <ul class="footer__address-list">
+                     <li class="address">
                         <a
                            href="https://goo.gl/maps/wcCM6j37VZqPyRbJ7"
-                           class="street link"
+                           class="address__street-link"
                            target="_blank"
                            rel="noopener noreferrer nofollow"
                            >г. Киев, пр-т Леси Украинки, 26
                         </a>
                      </li>
-                     <li class="address-list">
+                     <li class="address">
                         <a
-                           class="foot-contacts link"
+                           class="footer__contacts"
                            href="mailto:info@devstudio.com"
                            >info@devstudio.com</a
                         >
                      </li>
-                     <li class="address-list">
-                        <a class="foot-contacts link" href="tel:+380961111111"
+                     <li class="address">
+                        <a class="footer__contacts" href="tel:+380961111111"
                            >+38 096 111 11 11</a
                         >
                      </li>
                   </ul>
                </address>
             </div>
-            <div class="join">
-               <strong class="join-us">ПРИСОЕДИНЯЙТЕСЬ</strong>
-               <ul class="list social">
-                  <li class="social-list">
-                     <a href="" class="footer-social-link">
+            <div class="footer__join">
+               <strong class="join__label">ПРИСОЕДИНЯЙТЕСЬ</strong>
+               <ul class="social-list">
+                  <li class="social-list__item">
+                     <a href="" class="social-list__link">
                         <svg
-                           class="footer-social-icon"
+                           class="social-list__icon"
                            width="20px"
                            height="20px"
                         >
@@ -362,10 +356,10 @@
                         </svg>
                      </a>
                   </li>
-                  <li class="social-list">
-                     <a href="" class="footer-social-link">
+                  <li class="social-list__item">
+                     <a href="" class="social-list__link">
                         <svg
-                           class="footer-social-icon"
+                           class="social-list__icon"
                            width="20px"
                            height="20px"
                         >
@@ -373,10 +367,10 @@
                         </svg>
                      </a>
                   </li>
-                  <li class="social-list">
-                     <a href="" class="footer-social-link">
+                  <li class="social-list__item">
+                     <a href="" class="social-list__link">
                         <svg
-                           class="footer-social-icon"
+                           class="social-list__icon"
                            width="20px"
                            height="20px"
                         >
@@ -384,10 +378,10 @@
                         </svg>
                      </a>
                   </li>
-                  <li class="social-list">
-                     <a href="" class="footer-social-link">
+                  <li class="social-list__item">
+                     <a href="" class="social-list__link">
                         <svg
-                           class="footer-social-icon"
+                           class="social-list__icon"
                            width="20px"
                            height="20px"
                         >
@@ -397,15 +391,15 @@
                   </li>
                </ul>
             </div>
-            <div >
-               <form class="footer-form">
-                  <div class="footer-form-field">
-                     <label class="footer-mail-form" for="footer-mail-form">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
-                     <input  type="email" id="footer-mail-form" placeholder="E-mail">
+            <div>
+               <form class="subscribe-form">
+                  <div class="subscribe-form__field">
+                     <label class="subscribe-form__text" for="mail-form">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+                     <input class="subscribe-form__input"  type="email" id="mail-form" placeholder="E-mail">
                   </div>
-                     <button type="submit" class="footer-subscribe-btn">
+                     <button type="submit" class="subscribe-form__button">
                         Подписаться
-                        <svg class="subscribe-btn-icon" width="24px" height="24px">
+                        <svg class="subscribe-form__btn-icon" width="24px" height="24px">
                            <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                      </button>                  
