@@ -632,7 +632,7 @@ button{
    background-color: var(--current-color);
 }
 
-.social-list__icon {
+.social-list__icon--white {
    fill: var(--main-title-color);
    transition: fill 250ms var(--timing-function);
 }
