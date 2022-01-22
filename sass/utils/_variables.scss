@@ -1,0 +1,45 @@
+  $secondary-text-color: #757575;
+  $primary-text-color: #212121;
+  $current-color: #2196f3;
+  $main-title-color: #ffffff;
+  $addres-color: rgba(255, 255, 255, 0.6);
+  $background: #2f303a;
+  $second-background: #f5f4fa;
+  $border: #eeeeee;
+  $clients-picture-border: #afb1b8;
+  $hero-section-background: #c4c4c4;
+  $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+/* ОБЩИЕ НАСТРОЙКИ */
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+ul,ol {
+  list-style: none;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+a {
+  text-decoration: none;
+}
+button{
+  border: none;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
