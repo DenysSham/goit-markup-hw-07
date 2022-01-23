@@ -12,19 +12,14 @@
   padding-bottom: 25px;
   margin-right: 93px;
 }
-%logo{
-  font-family: Raleway;
-  font-style: normal;
-  font-size: 26px;
-  line-height: 1.19;
-}
+
 .site-nav__logo-part1 {
   @extend %logo;
   color: $current-color;
 }
 .site-nav__logo-part2 {
   @extend %logo;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 .site-nav__list {
   display: flex;
@@ -40,12 +35,12 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-  transition: color 250ms var(--timing-function);
+  color:  $primary-text-color ;
+  transition: color 250ms  $timing-function ;
 }
 .site-nav__list-link:focus,
 .site-nav__list-link:hover {
-  color: var(--current-color);
+  color:  $current-color ;
 }
 .site-nav__list-item {
   position: relative;
@@ -56,11 +51,11 @@
   transform: translateX(-100%);
   bottom: 0px;
   width: 100%;
-  border-bottom: solid 4px var(--current-color);
+  border-bottom: solid 4px  $current-color ;
   border-radius: 2px;
 }
 .site-nav__list-link--current {
-  color: var(--current-color);
+  color:  $current-color ;
 }
 .header-contacts {
   margin-left: auto;
@@ -78,22 +73,22 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   padding: 32px 0;
-  color: var(--secondary-text-color);
-  transition: color 250ms var(--timing-function);
+  color:  $secondary-text-color ;
+  transition: color 250ms  $timing-function ;
 }
 .header-contacts__link:hover,
 .header-contacts__link:focus {
-  color: var(--current-color);
+  color:  $current-color ;
 }
 .header-contacts__mail-icon,
 .header-contacts__phone-icon {
   margin-right: 10px;
   fill: rgba(117, 117, 117, 1);
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms  $timing-function ;
 }
 .header-contacts__link:hover .header-contacts__phone-icon,
 .header-contacts__link:focus .header-contacts__phone-icon,
 .header-contacts__link:hover .header-contacts__mail-icon,
 .header-contacts__link:focus .header-contacts__mail-icon {
-  fill: var(--current-color);
+  fill:  $current-color ;
 }
